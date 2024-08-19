@@ -52,7 +52,7 @@
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Práctica 1</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Contador de pulsos.</p>
+                <p class="lead fw-normal text-white-50 mb-0">Ejercicio de Repaso.</p>
                 <a class="btn btn-primary btn-xl" href="../../../teoria.html">Regresar a Teoría</a>
             </div>
         </div>
@@ -63,14 +63,15 @@
             <h3 class="text-secondary mb-0">Descripción</h3>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-6">
-                    <p>En esta actividad se desarrolla y valida un protocolo de comunicación para un contador de pulsos
-                        utilizando dos Arduinos;
-                        esto para evaluar los métodos de comunicación que se utilizan en el área de redes digitales.</p>
-                    <a class="btn btn-primary btn-xl" href="Pract_1.pdf" target="_blank">Instrucciones PDF</a>
+                    <p>En esta actividad se desarrollan siete circuitos para recordar como realizar conexiones en serie,
+                        paralelo, circuitos OR, AND y LATCH. Esto se hace mediante el simulador de FluidSim y un armado
+                        en Físico en el laboratorio de automatización para recordar y asegurarnos de conocer las medidas
+                        de prevención y la forma de conexión a trabajar en circuitos a un voltaje de 120 Volts.</p>
+                    <a class="btn btn-primary btn-xl" href="assets/Ejercicios repaso.pdf" target="_blank">Instrucciones PDF</a>
                 </div>
                 <div class="col-lg-6">
                     <img class="img-fluid" width="70%" height="auto"
-                        src="https://media.licdn.com/dms/image/C5612AQE8RojSf36MkA/article-cover_image-shrink_600_2000/0/1636698019897?e=2147483647&v=beta&t=2u9sNHe_3BG4HyYNMlCZ-2aGpQA_bWzM4hYxToiR0vk"
+                        src="https://i.ytimg.com/vi/bj-j0OI_UAc/maxresdefault.jpg"
                         alt="...">
                 </div>
             </div>
@@ -83,77 +84,154 @@
                 <div class="d-flex align-items-stretch">
                     <div class="card">
                         <div class="card-img">
-                            <iframe width="100%" height="500" src="https://www.tinkercad.com/embed/8pbPpV1kmNP"
-                                frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                            <video width="100%" height="auto" src="assets/FluidSIM.mp4" controls  muted autoplay loop></video>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><a href="">Contador de Pulsos</a></h5>
-                            <p class="fst-italic text-center">En esta actividad, se diseña y prueba un protocolo de
-                                comunicación para
-                                un contador de pulsos.
-                                Utilizando dos Arduinos, uno se programa para enviar una cantidad específica de pulsos a
-                                distintas frecuencias,
-                                mientras que el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor
-                                serial. Los Arduinos se conectan y
-                                calibran usando un osciloscopio para verificar el funcionamiento correcto a frecuencias
-                                de 1, 10, 100 y 1000 pulsos por segundo.
-                                Se requiere una conexión común a tierra entre los dispositivos para la comunicación
-                                efectiva.</p>
+                            <h5 class="card-title"><a href="">Simulación de los siete circuitos en FluidSim</a></h5>
+                            <p class="fst-italic text-center">En esta parte se realizo la simulación de los circuitos en
+                                FluidSim utilizando los componentes adecuados y modificando los parámetros de la
+                                simulación para un funcionamiento a 120 Volts.</p>
                             <p class="card-text"></p>
+                            <a class="btn btn-primary btn-xl" href="assets/Ejercico de repaso.fsprj" target="_blank">Descargar Simulación</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Code Section -->
-    <section class="py-5 text-white">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="code-container">
-                <div class="code-section">
-                    <h3 class="text-secondary mb-0">Código Parte 1</h3>
-                    <pre class="line-numbers"><code class="language-clike">//CONTADOR DE PULSOS ARDUINO 1
-int cuenta=0;
-void setup()
-{
-pinMode(2, INPUT);
-Serial.begin(115200);
-}
-
-void loop()
-{
-if(digitalRead(2)==HIGH)
-{
-    while(digitalRead(2)==HIGH);
-    cuenta++;
-    Serial.println(cuenta);
-}
-}</code></pre>
+    <br>
+    <section id="events" class="events section">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="card-img-top mb-5 mb-md-0" src="assets/C1.png" alt="...">
+                                <img class="" style="margin-left: 25%;" src="assets/1.jpg" width="49.6%" alt="...">
+                                <video width="100%" height="auto" src="assets/1.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">1er Circuito</a></h5>
+                            <p class="fst-italic text-center">En este primer circuito se conecta una lámpara a 120
+                                volts.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="code-section">
-                    <h3 class="text-secondary mb-0">Código Parte 2</h3>
-                    <pre class="line-numbers"><code class="language-clike">//ENVIO DE PULSOS ARDUINO 2
-void pulsos(int cantidad, int frecuencia)
-{
-for(int i=0; i&lt;cantidad; i++)
-{
-    digitalWrite(2, HIGH);
-    delay(1000/frecuencia); 
-    digitalWrite(2, LOW);
-    delay(1000/frecuencia); //el delay es en milisegundos
-}
-}
-
-void setup()
-{
-pinMode(2, OUTPUT);
-pulsos(2000,1000);
-}
-
-void loop()
-{
-}</code></pre>
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="card-img-top mb-5 mb-md-0" src="assets/C2.png" alt="...">
+                                <img class="" src="assets/2.jpg" width="49.6%" alt="...">
+                                <img class="" src="assets/2.1.jpg" width="49.6%" alt="...">
+                                <video width="100%" height="auto" src="assets/2.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">2do Circuito</a></h5>
+                            <p class="fst-italic text-center">Se conecta un botón y cuando se presiona se enciende la
+                                lámpara a 120 volts.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="" src="assets/C3.png" width="100%" alt="...">
+                                <img class="" style="margin-left: 25%;" src="assets/3.jpg" width="49.6%" alt="...">
+                                <video width="100%" height="auto" src="assets/3.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">3er Circuito</a></h5>
+                            <p class="fst-italic text-center">Con un botón se conectan dos lámparas en paralelo, cuando
+                                se presionan ambas encienden.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="" src="assets/C4.png" width="100%" alt="...">
+                                <img class="" src="assets/4.jpg" width="49.6%" alt="...">
+                                <img class="" src="assets/4.1.jpg" width="49.6%" alt="...">
+                                <video width="100%" height="auto" src="assets/4.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">4to Circuito</a></h5>
+                            <p class="fst-italic text-center">Con un botón se conectan dos lámparas en serie, cuando se
+                                presionan ambas encienden.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="" width="100%" src="assets/C5.png" alt="...">
+                                <img style="margin-left: 15.5%;" class="" width="33%" src="assets/5.jpg" alt="...">
+                                <img class="" width="33%" src="assets/5.1.jpg" alt="...">
+                                <video width="100%" height="auto" src="assets/5.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">5to Circuito</a></h5>
+                            <p class="fst-italic text-center">Se crea un circuito con dos botones en serie emulando una
+                                función AND, cuando ambos se presionan se enciende una lámpara con 120 volts.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="card-img-top mb-5 mb-md-0" src="assets/C6.png" alt="...">
+                                <img class="" width="32.95%" src="assets/6.jpg" alt="...">
+                                <img class="" width="32.95%" src="assets/6.1.jpg" alt="...">
+                                <img class="" width="32.95%" src="assets/6.2.jpg" alt="...">
+                                <video width="100%" height="auto" src="assets/6.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">6to Circuito</a></h5>
+                            <p class="fst-italic text-center">Se crea un circuito con dos botones en paralelo emulando
+                                una función OR, cuando se presionan cualquiera de los botones se enciende una lámpara
+                                con 120 volts.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <div class="">
+                                <img class="" style="margin-left:33%;" src="assets/C7.png" width="33%" alt="...">
+                                <br>
+                                <img class="" src="assets/7.1.jpg" width="33.15%" alt="...">
+                                <img class="" src="assets/7.2.jpg" width="33.15%" alt="...">
+                                <img class="" src="assets/7.3.jpg" width="33.15%" alt="...">
+                                <video style="margin-left: 25%;" width="50%" height="auto" src="assets/7.mp4" controls  muted autoplay loop></video>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">7mo Circuito</a></h5>
+                            <p class="fst-italic text-center">Se crea un circuito de retención (memoria) tipo LATCH,
+                                cuando se presiona el botón de activación este activa el circuito hasta que se presione
+                                el botón de paro y se dentenga el paso de energía. Para comprobarlo se añade una lámpara
+                                para ver los 120 volts al activarse y desactivarse.</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
