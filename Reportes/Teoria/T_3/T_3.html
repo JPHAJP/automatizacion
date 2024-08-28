@@ -51,8 +51,8 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Práctica 1</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Contador de pulsos.</p>
+                <h1 class="display-4 fw-bolder">Práctica 3</h1>
+                <p class="lead fw-normal text-white-50 mb-0">Construcción de circuitos básicos</p>
                 <a class="btn btn-primary btn-xl" href="../../../teoria.html">Regresar a Teoría</a>
             </div>
         </div>
@@ -63,14 +63,14 @@
             <h3 class="text-secondary mb-0">Descripción</h3>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-6">
-                    <p>En esta actividad se desarrolla y valida un protocolo de comunicación para un contador de pulsos
-                        utilizando dos Arduinos;
-                        esto para evaluar los métodos de comunicación que se utilizan en el área de redes digitales.</p>
-                    <a class="btn btn-primary btn-xl" href="Pract_1.pdf" target="_blank">Instrucciones PDF</a>
+                    <p>En esta actividad se diseño y construyó un tablero eléctrico para montar circuitos, siguiendo la
+                        teoría especificada y tomando en cuenta las normas para rieles y canaletas con la finalidad de
+                        representar lo más apegado a un tablero real.</p>
+                    <!-- <a class="btn btn-primary btn-xl" href="Pract_1.pdf" target="_blank">Instrucciones PDF</a> -->
                 </div>
                 <div class="col-lg-6">
                     <img class="img-fluid" width="70%" height="auto"
-                        src="https://media.licdn.com/dms/image/C5612AQE8RojSf36MkA/article-cover_image-shrink_600_2000/0/1636698019897?e=2147483647&v=beta&t=2u9sNHe_3BG4HyYNMlCZ-2aGpQA_bWzM4hYxToiR0vk"
+                        src="https://hoffman-latam.com/wp-content/uploads/2023/03/Tablero-electrico-tableros-electricos.webp"
                         alt="...">
                 </div>
             </div>
@@ -83,77 +83,46 @@
                 <div class="d-flex align-items-stretch">
                     <div class="card">
                         <div class="card-img">
-                            <iframe width="100%" height="500" src="https://www.tinkercad.com/embed/8pbPpV1kmNP"
-                                frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                            <div class="sketchfab-embed-wrapper"> <iframe title="Caja_Automatización_O24"
+                                    frameborder="0" allowfullscreen mozallowfullscreen="true"
+                                    webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                                    xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+                                    web-share width="100%" height="480"
+                                    src="https://sketchfab.com/models/7f9e0fce203d44f7a1f7e00cd4517a3f/embed?autostart=1&ui_theme=dark">
+                                </iframe>
+                            </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><a href="">Contador de Pulsos</a></h5>
-                            <p class="fst-italic text-center">En esta actividad, se diseña y prueba un protocolo de
-                                comunicación para
-                                un contador de pulsos.
-                                Utilizando dos Arduinos, uno se programa para enviar una cantidad específica de pulsos a
-                                distintas frecuencias,
-                                mientras que el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor
-                                serial. Los Arduinos se conectan y
-                                calibran usando un osciloscopio para verificar el funcionamiento correcto a frecuencias
-                                de 1, 10, 100 y 1000 pulsos por segundo.
-                                Se requiere una conexión común a tierra entre los dispositivos para la comunicación
-                                efectiva.</p>
+                            <h5 class="card-title"><a href="">Diseño 3D de caja</a></h5>
+                            <p class="fst-italic text-center">Para poder crear el tablero eléctrico, primero se revisó
+                                la teoria de construcción de un tablero, esto incluye normas como la DIN 60715 que especifica
+                                la forma de los rieles para ajustar los componentes eléctricos y que sea más sencilla su
+                                instalación y con un uso seguro.</p>
                             <p class="card-text"></p>
+                            <a class="btn btn-primary btn-xl" href="assets/Caja.STEP" target="_blank">Archivo de diseño .STEP</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Code Section -->
-    <section class="py-5 text-white">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="code-container">
-                <div class="code-section">
-                    <h3 class="text-secondary mb-0">Código Parte 1</h3>
-                    <pre class="line-numbers"><code class="language-clike">//CONTADOR DE PULSOS ARDUINO 1
-int cuenta=0;
-void setup()
-{
-pinMode(2, INPUT);
-Serial.begin(115200);
-}
-
-void loop()
-{
-if(digitalRead(2)==HIGH)
-{
-    while(digitalRead(2)==HIGH);
-    cuenta++;
-    Serial.println(cuenta);
-}
-}</code></pre>
-                </div>
-                <div class="code-section">
-                    <h3 class="text-secondary mb-0">Código Parte 2</h3>
-                    <pre class="line-numbers"><code class="language-clike">//ENVIO DE PULSOS ARDUINO 2
-void pulsos(int cantidad, int frecuencia)
-{
-for(int i=0; i&lt;cantidad; i++)
-{
-    digitalWrite(2, HIGH);
-    delay(1000/frecuencia); 
-    digitalWrite(2, LOW);
-    delay(1000/frecuencia); //el delay es en milisegundos
-}
-}
-
-void setup()
-{
-pinMode(2, OUTPUT);
-pulsos(2000,1000);
-}
-
-void loop()
-{
-}</code></pre>
+                <div class="d-flex align-items-stretch" style="margin-top: 20px;">
+                    <div class="card">
+                        <div class="card-img">
+                            <embed src="assets/Plano.pdf" type="application/pdf" width="100%" height="600px" />
+                            <img class="" src="assets/1.jpg" width="49.85%" alt="...">
+                            <img class="" src="assets/2.jpg" width="49.85%" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="">Construcción</a></h5>
+                            <p class="fst-italic text-center">Para el armado del modelo 3D del tablero eléctrico se
+                                realizaron los planos de las figuras y se exporto a dxf para poder mediante un
+                                prototipado rápido con mdf y corte láser construir el tablero; se utilizaron elementos
+                                como "press and fit" para mejorar el armado. Finalmente se reforzo mediante pegamento
+                                blanco y se monto en el aula para poder realizar las siguientes prácticas del curso en
+                                este.</p>
+                            <p class="card-text"></p>
+                            <a class="btn btn-primary btn-xl" href="assets/Plano.DXF" target="_blank">Planos DXF</a>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
