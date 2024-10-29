@@ -128,8 +128,9 @@
                     <tbody>
                         <tr>
                             <td>Siemens 6ES7214-1AG40-0XB0 S7-1200</td>
-                            <td>Automatizar procesos, controlar entradas y salidas, comunicarse con otros dispositivos</td>
-                            <td><img src="assets/PLC_symbol.png" alt="Simbología PLC" style="max-width: 150px;" ></td>
+                            <td>Automatizar procesos, controlar entradas y salidas, comunicarse con otros dispositivos
+                            </td>
+                            <td><img src="assets/PLC_symbol.png" alt="Simbología PLC" style="max-width: 150px;"></td>
                             <td><img src="assets/PLC_real.png" alt="Foto PLC" style="max-width: 120px;">
                             </td>
                         </tr>
@@ -139,14 +140,16 @@
                                 lo realizan mediante una bobina que al energizarse crea un campo magnetico que
                                 activa mueve un interruptor.</td>
                             <td><img src="../T_4/assets/bobina_symbol.png" alt="Simbología Bobina"></td>
-                            <td><img src="../T_4/assets/bobina_real.png" alt="Foto Bobina" style="max-width: 120px;"></td>
+                            <td><img src="../T_4/assets/bobina_real.png" alt="Foto Bobina" style="max-width: 120px;">
+                            </td>
                         </tr>
                         <tr>
                             <td>Interruptor</td>
                             <td>Son de accionamiento manual con dos posiciones. Contienen un sistema de
                                 enclavamiento.</td>
                             <td><img src="../T_4/assets/interruptor_symbol.png" alt="Simbología Interruptor"></td>
-                            <td><img src="../T_4/assets/interruptor_real.png" alt="Foto Interruptor" style="max-width: 120px;"></td>
+                            <td><img src="../T_4/assets/interruptor_real.png" alt="Foto Interruptor"
+                                    style="max-width: 120px;"></td>
                         </tr>
                         <tr>
                             <td>Linea, Fase</td>
@@ -169,14 +172,16 @@
                             <td>Necesarias para alimentar con corriente todos los componentes. Envían energía y
                                 convierten la corriente alterna en directa para alimentar ciertos circuitos.</td>
                             <td><img src="../T_4/assets/Fuente_symbol.png" alt="Simbología Interruptor"></td>
-                            <td><img src="../T_4/assets/Fuente_real.png" alt="Foto Interruptor" style="max-width: 120px;">
+                            <td><img src="../T_4/assets/Fuente_real.png" alt="Foto Interruptor"
+                                    style="max-width: 120px;">
                             </td>
                         </tr>
                         <tr>
                             <td>Botones / pulsadores</td>
                             <td>Permiten abrir y/o cerrar circuitos cuando se ejerce presión sobre él.</td>
                             <td><img src="../T_4/assets/boton_symbol.png" alt="Simbología Interruptor"></td>
-                            <td><img src="../T_4/assets/boton_real.png" alt="Foto Interruptor" style="max-width: 120px;">
+                            <td><img src="../T_4/assets/boton_real.png" alt="Foto Interruptor"
+                                    style="max-width: 120px;">
                             </td>
                         </tr>
                         <tr>
@@ -239,9 +244,10 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">1er Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se prueba el funcionamiento del PLC
+                                mediante TIA Portal con un botón normalmente abierto, el botón programado se conecta a
+                                una de las entradas del PLC (I0.0), para verificar el funcionamiento se conecta una
+                                lámpara de 24V a la salida Q0.0 del PLC.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -262,9 +268,10 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">2do Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se prueba el funcionamiento del PLC
+                                mediante TIA Portal con un botón normalmente cerrado, el botón programado se conecta a
+                                una de las entradas del PLC (I0.0), para verificar el funcionamiento se conecta una
+                                lámpara de 24V a la salida Q0.0 del PLC.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -285,9 +292,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">3er Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se prueba el funcionamiento del PLC
+                                mediante TIA Portal con dos botones normalmente abiertos, los cuales cumplen una función
+                                lógica AND, los botones programados se conectan a
+                                dos de las entradas del PLC (I0.0 & I0.2), para verificar el funcionamiento se conecta
+                                una lámpara de 24V a la salida Q0.0 del PLC.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -308,9 +317,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">4to Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se prueba el funcionamiento del PLC
+                                mediante TIA Portal con dos botones normalmente abiertos, los cuales cumplen una función
+                                lógica OR, los botones programados se conectan a
+                                dos de las entradas del PLC (I0.0 & I0.2), para verificar el funcionamiento se conecta
+                                una lámpara de 24V a la salida Q0.0 del PLC.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -331,9 +342,11 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">5to Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se prueba el funcionamiento del PLC
+                                mediante TIA Portal con dos botones normalmente abiertos, los cuales cumplen una función
+                                de latch (al acti), los botones programados se conectan a
+                                dos de las entradas del PLC (I0.0 & I0.2), para verificar el funcionamiento se conecta
+                                una lámpara de 24V a la salida Q0.0 del PLC.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
