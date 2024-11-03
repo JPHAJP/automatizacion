@@ -120,12 +120,103 @@
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Marco Teórico: Sensores Industriales y su Integración con PLC</h1>
+
+            <section class="mb-5">
+                <h2>Sensores Capacitivos</h2>
+                <p>Los <strong>sensores capacitivos</strong> detectan objetos mediante el cambio en la capacitancia del
+                    entorno cercano. Estos sensores son ideales para detectar materiales no metálicos, como plásticos,
+                    líquidos y maderas.</p>
+                <p>El principio de funcionamiento se basa en el campo eléctrico generado por el sensor. Cuando un objeto
+                    se acerca, la capacitancia entre el sensor y el objeto aumenta, lo que genera una señal de salida.
+                    Los sensores capacitivos se utilizan en aplicaciones donde es necesario detectar materiales sin
+                    contacto físico, especialmente en procesos de control de inventario y nivel de líquidos.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Sensores Inductivos</h2>
+                <p>Los <strong>sensores inductivos</strong> funcionan detectando objetos metálicos a través de un campo
+                    electromagnético. Son ideales para aplicaciones en las que se requiere detectar piezas de metal sin
+                    contacto directo.</p>
+                <p>Estos sensores generan un campo electromagnético alrededor de su bobina. Cuando un objeto metálico se
+                    aproxima, altera el campo y cambia la inductancia del sensor, lo que activa una señal de salida. Los
+                    sensores inductivos se utilizan comúnmente en líneas de ensamblaje y control de posición de piezas
+                    metálicas.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Otros Sensores Industriales</h2>
+                <p>Además de los sensores capacitivos e inductivos, existen otros tipos de sensores industriales
+                    utilizados en sistemas automatizados:</p>
+                <ul>
+                    <li><strong>Sensores de proximidad ópticos:</strong> Utilizan un haz de luz infrarroja o láser para
+                        detectar objetos, ideales para detectar piezas sin importar el material.</li>
+                    <li><strong>Sensores ultrasónicos:</strong> Emplean ondas ultrasónicas para medir distancias,
+                        adecuados para aplicaciones de control de nivel y posicionamiento preciso.</li>
+                    <li><strong>Sensores de presión:</strong> Miden la presión de gases o líquidos, utilizados en
+                        sistemas hidráulicos y neumáticos.</li>
+                    <li><strong>Sensores de temperatura:</strong> Monitorean la temperatura de componentes y procesos,
+                        fundamentales para control térmico en industrias.</li>
+                </ul>
+                <p>Cada tipo de sensor tiene aplicaciones específicas y se selecciona en función de las necesidades del
+                    proceso industrial.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Aplicaciones de Sensores Industriales</h2>
+                <p>Los sensores industriales se emplean en una amplia gama de aplicaciones en la industria, tales como:
+                </p>
+                <ul>
+                    <li><strong>Control de calidad:</strong> Verifican la presencia, posición y dimensiones de piezas en
+                        líneas de producción.</li>
+                    <li><strong>Control de inventario:</strong> Los sensores capacitivos se usan para detectar el nivel
+                        de materiales en silos y tanques.</li>
+                    <li><strong>Automatización de procesos:</strong> Sensores de proximidad y de presión controlan la
+                        secuencia de operaciones en procesos automáticos.</li>
+                    <li><strong>Seguridad de máquinas:</strong> Sensores de proximidad se integran en sistemas de parada
+                        de emergencia para evitar accidentes.</li>
+                </ul>
+                <p>Estos sensores son esenciales para asegurar la precisión, calidad y seguridad en los sistemas
+                    industriales.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Normas Industriales para Sensores</h2>
+                <p>Los sensores industriales están sujetos a normas que regulan su fabricación, instalación y uso para
+                    garantizar su desempeño en ambientes industriales:</p>
+                <ul>
+                    <li><strong>IEC 60947:</strong> Norma para equipos de conmutación y control de baja tensión, que
+                        incluye sensores y actuadores.</li>
+                    <li><strong>ISO 14119:</strong> Norma para dispositivos de protección en sistemas de control,
+                        aplicable a sensores de seguridad.</li>
+                    <li><strong>IEC 61496:</strong> Norma para dispositivos de detección de presencia, utilizada en
+                        sensores de seguridad para proteger al personal.</li>
+                </ul>
+                <p>Estas normas aseguran que los sensores cumplan con los requisitos de seguridad y rendimiento en
+                    entornos industriales exigentes.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Seguridad y Control de Procesos con Sensores</h2>
+                <p>La integración de sensores en sistemas automatizados es clave para la seguridad y control de procesos
+                    industriales. Estos sensores monitorean constantemente variables críticas, permitiendo la detección
+                    temprana de fallas o anomalías en el sistema.</p>
+                <p>En términos de seguridad, los sensores de proximidad y presencia son esenciales en aplicaciones donde
+                    es necesario proteger a los operadores de máquinas peligrosas, activando paradas de emergencia si se
+                    detecta la presencia de personas en áreas restringidas.</p>
+                <p>Para el control de procesos, los sensores aseguran que las condiciones operativas se mantengan dentro
+                    de los rangos óptimos, lo que permite mejorar la eficiencia y confiabilidad de los sistemas
+                    industriales. Los PLC pueden interpretar las señales de los sensores y tomar decisiones en tiempo
+                    real para ajustar el funcionamiento de los equipos en función de los datos proporcionados.</p>
+            </section>
+        </div>
     </section>
     <!-- Events Section -->
     <section class=" text-white">
         <div class="container my-5">
             <div class="container text-white mt-5">
-                <h3 class="text-center">Circuito 1 - 5 (PLC)</h3>
+                <h3 class="text-center">Circuito 1 - 4 (PLC)</h3>
                 <table class="table table-striped table-dark table-bordered">
                     <thead>
                         <tr>
@@ -140,7 +231,8 @@
                             <td>Siemens 6ES7214-1AG40-0XB0 S7-1200</td>
                             <td>Automatizar procesos, controlar entradas y salidas, comunicarse con otros dispositivos
                             </td>
-                            <td><img src="../T_7/assets/PLC_symbol.png" alt="Simbología PLC" style="max-width: 150px;"></td>
+                            <td><img src="../T_7/assets/PLC_symbol.png" alt="Simbología PLC" style="max-width: 150px;">
+                            </td>
                             <td><img src="../T_7/assets/PLC_real.png" alt="Foto PLC" style="max-width: 120px;">
                             </td>
                         </tr>
@@ -221,7 +313,8 @@
                         <tr>
                             <td>Motor monofásico</td>
                             <td>Máquina rotativa que convierte la energía eléctrica en energía mecánica.</td>
-                            <td><img src="assets/motor_monofasico_symbol.png" alt="Simbología Motor monofásico" style="max-width: 120px;"></td>
+                            <td><img src="assets/motor_monofasico_symbol.png" alt="Simbología Motor monofásico"
+                                    style="max-width: 120px;"></td>
                             <td><img src="assets/motor_monofasico_real.png" alt="Foto Motor monofásico"
                                     style="max-width: 120px;"></td>
                         </tr>
@@ -257,10 +350,11 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><a href="">1er Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <h5 class="card-title"><a href="">1er Circuito</a></h5>
+                            <p class="fst-italic text-center">En este circuito se prueba el sensor industrial inductivo.
+                                Este tiene la capacidad de detectar metales al entrar en contacto con ellos; para ello
+                                se conecta directamente el sensor a 24V y se conecta directamente a una lámpara para
+                                detectar cuando se activa de forma visual.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -282,10 +376,13 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><a href="">2do Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <h5 class="card-title"><a href="">2do Circuito</a></h5>
+                            <p class="fst-italic text-center">En este circuito se prueba el sensor industrial inductivo
+                                con un PLC.
+                                Para ello se conecta y programa el PLC S71200-1215C con la entrada I0.7 con el sensor
+                                inductivo a 24V. Se conecta el PLC en la salida Q0.0 a una lámpara para detectar cuando
+                                se activa de forma
+                                visual.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -295,7 +392,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-12">
-                                    <img class="" src="assets/C3.png" width="100%" alt="...">
+                                    <img class="" src="assets/C4.png" width="100%" alt="...">
                                 </div>
                                 <div class="col-6">
                                     <img class="" src="assets/P8.1.jpg" width="100%" alt="...">
@@ -307,10 +404,12 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><a href="">3er Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <h5 class="card-title"><a href="">3er Circuito</a></h5>
+                            <p class="fst-italic text-center">En este circuito se utiliza el sensor inductivo en un
+                                arreglo de enclavamiento para activar un motor monofásico conectado a un relevador y
+                                este a su vez a un contactor; para enviar la señal de activación del circuito de
+                                enclavamiento se utiliza un PLC con salida visual de activación en Q0.0 y para el
+                                relevador en Q0.6.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -333,9 +432,15 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title"><a href="">4to Circuito PLC</a></h5>
-                            <p class="fst-italic text-center">En este circuito el motor DC se puede activar o desactivar
-                                mediante un circuito de enclavamiento y tiene 240 rev por minuto al alimentarse mediante
-                                una fuente de poder de 24V.</p>
+                            <p class="fst-italic text-center">En este circuito se utilizan dos sensores inductivos en un
+                                arreglo de enclavamiento para activar y desactivar un motor monofásico conectado a un
+                                relevador y
+                                este a su vez a un contactor; para enviar la señal de activación del circuito de
+                                enclavamiento se utiliza un PLC con las entradas I0.7 para cativar con un sensor (I0.0
+                                para activar con botón) y la
+                                entrada I0.6 para desactivar el enclavamiento (I0.2 con botón); con salida visual de
+                                activación en Q0.0 y
+                                para el relevador en Q0.6.</p>
                             <!-- <p class="card-text"></p> -->
                         </div>
                     </div>
@@ -343,23 +448,76 @@
             </div>
         </div>
     </section>
-    <section class="py-5 text-white"></section>
-    <div class="container px-4 px-lg-5 my-5">
-        <h3 class="text-secondary mb-0">Conclusión</h3>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12">
-                <p class="text-white">Al finalizar esta práctica, se logró comprender el funcionamiento de los sensores
-                    industriales y su importancia en la automatización de procesos mediante PLC. A través de las
-                    simulaciones y montajes físicos, se identificaron las características clave de los sensores y se
-                    analizaron las diferencias entre los distintos circuitos estudiados. Los resultados obtenidos
-                    demuestran cómo la correcta elección y configuración de los sensores industriales puede mejorar
-                    significativamente la precisión y eficiencia de los sistemas automatizados. En conclusión, esta
-                    práctica proporcionó una visión clara y práctica del rol de los sensores en la industria moderna,
-                    reforzando los conocimientos adquiridos sobre su integración con PLC.
-                </p>
+    <section class="py-5 text-white">
+        <div class="container px-4 px-lg-5 my-5">
+            <h3 class="text-secondary mb-0">Conclusión</h3>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-12">
+                    <p class="text-white">Al finalizar esta práctica, se logró comprender el funcionamiento de los
+                        sensores
+                        industriales y su importancia en la automatización de procesos mediante PLC. A través de las
+                        simulaciones y montajes físicos, se identificaron las características clave de los sensores y se
+                        analizaron las diferencias entre los distintos circuitos estudiados. Los resultados obtenidos
+                        demuestran cómo la correcta elección y configuración de los sensores industriales puede mejorar
+                        significativamente la precisión y eficiencia de los sistemas automatizados. En conclusión, esta
+                        práctica proporcionó una visión clara y práctica del rol de los sensores en la industria
+                        moderna,
+                        reforzando los conocimientos adquiridos sobre su integración con PLC.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Referencias Bibliográficas</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    ACATECH, National Academy of Science and Engineering. (2020). <i>Industrie 4.0 Maturity Index</i>.
+                    Disponible en <a
+                        href="https://www.acatech.de/publikation/industrie-4-0-maturity-index-update-2020/download-pdf?lang=en"
+                        target="_blank">Acatech</a>.
+                </li>
+                <li class="list-group-item">
+                    Bolton, W. (2020). <i>Programmable Logic Controllers and Industrial Automation: An Introduction with
+                        ControlLogix, Siemens, and TIA Portal Examples</i>. Oxford: Butterworth-Heinemann.
+                </li>
+                <li class="list-group-item">
+                    Boylestad, R. L. (2021). <i>Introductory Circuit Analysis</i>. Boston, MA: Pearson.
+                </li>
+                <li class="list-group-item">
+                    Calzada, A., & Salvador, M. (2019). <i>Diseño y construcción de cuadros eléctricos de maniobra y
+                        control</i>. Madrid: Ediciones Paraninfo.
+                </li>
+                <li class="list-group-item">
+                    Deppert, W., & Stoll, R. (2018). <i>Fundamentals of Pneumatic Control Engineering: Components,
+                        Functions, Diagrams, and Practice Applications</i>. Munich: Springer.
+                </li>
+                <li class="list-group-item">
+                    Esteve, J. (2015). <i>Automatismos y cuadros eléctricos industriales</i>. Madrid: Ediciones
+                    Paraninfo.
+                </li>
+                <li class="list-group-item">
+                    Fraden, J. (2016). <i>Handbook of Modern Sensors: Physics, Designs, and Applications</i>. New York,
+                    NY: Springer.
+                </li>
+                <li class="list-group-item">
+                    Gallo, T., Cagnetti, C., Silvestri, C., & Ruggieri, A. (2021). "Industry 4.0 tools in lean
+                    production: A systematic literature review." <i>Procedia Computer Science, 180</i>, 394–403.
+                    Disponible en <a href="https://www.sciencedirect.com/science/article/pii/S1877050921002982"
+                        target="_blank">ScienceDirect</a>.
+                </li>
+                <li class="list-group-item">
+                    Gilchrist, A. (2016). <i>Industry 4.0: The Industrial Internet of Things</i>. Berkeley, CA: Apress.
+                </li>
+                <li class="list-group-item">
+                    Martin, J. C., & Garcia, M. P. (2009). <i>Automatismos Industriales</i>. Madrid: Editorial Editex,
+                    S. A.
+                </li>
+                <li class="list-group-item">
+                    Rehg, J. A., & Sartori, G. J. (2016). <i>Programmable Logic Controllers with Ladder Logic and the
+                        Engineering of Electric Circuits</i>. Upper Saddle River, NJ: Pearson.
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Footer -->

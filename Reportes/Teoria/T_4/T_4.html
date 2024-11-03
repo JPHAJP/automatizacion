@@ -120,6 +120,72 @@
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Marco Teórico: Simulación y Comparación de Motores DC y AC</h1>
+            <section class="mb-5">
+                <h2>Motores DC y AC: Funcionamiento y Comparación</h2>
+                <p>Los motores eléctricos se dividen principalmente en motores de corriente continua (DC) y de corriente
+                    alterna (AC), cada uno con características y aplicaciones específicas:</p>
+                <ul>
+                    <li><strong>Motor de Corriente Continua (DC):</strong> Utiliza corriente directa para su
+                        funcionamiento, ofreciendo un control sencillo de velocidad mediante el ajuste de voltaje o del
+                        campo. Es común en aplicaciones de robótica, vehículos eléctricos y sistemas que requieren
+                        control preciso.</li>
+                    <li><strong>Motor de Corriente Alterna Monofásico (AC):</strong> Opera con corriente alterna
+                        monofásica y es usado principalmente en electrodomésticos y pequeñas aplicaciones. Su control de
+                        velocidad es más complejo, y requiere dispositivos como condensadores para el arranque.</li>
+                    <li><strong>Motor de Corriente Alterna Trifásico (AC):</strong> Alimentado con corriente alterna
+                        trifásica, genera un campo magnético rotante automático, lo que permite una operación suave y
+                        alto par. Es común en maquinaria industrial y aplicaciones de alta potencia.</li>
+                </ul>
+            </section>
+
+            <section class="mb-5">
+                <h2>Conexión de Motores Trifásicos con Contactores</h2>
+                <p>Para controlar motores trifásicos, se utilizan <strong>contactores</strong> que permiten conectar o
+                    desconectar el motor de la fuente de energía. La configuración del contactor garantiza que el motor
+                    pueda arrancar o parar de manera segura y eficiente, además de facilitar la inversión de giro en
+                    aplicaciones que lo requieren.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Inversión de Giro en Motores Trifásicos</h2>
+                <p>La <strong>inversión de giro en un motor trifásico</strong> se logra intercambiando dos de las tres
+                    fases de la conexión. Este proceso altera la dirección del campo magnético rotante, lo que provoca
+                    que el motor gire en la dirección opuesta. Esta función es esencial en aplicaciones industriales que
+                    requieren cambios de dirección frecuentes.</p>
+            </section>
+
+            <section class="mb-5">
+                <h2>Tipos de Arrancadores</h2>
+                <p>Los motores AC pueden utilizar diferentes tipos de <strong>arrancadores</strong> para iniciar su
+                    funcionamiento. Los más comunes son:</p>
+                <ul>
+                    <li><strong>Arrancador Estrella:</strong> Reduce la corriente inicial al arrancar el motor
+                        conectándolo en configuración estrella. Es ideal para motores de alta potencia.</li>
+                    <li><strong>Arrancador Delta:</strong> Cambia la conexión a delta después del arranque en estrella,
+                        permitiendo al motor operar a plena potencia. Es adecuado para reducir el esfuerzo mecánico y
+                        eléctrico durante el arranque.</li>
+                    <li><strong>Arrancador Estrella-Delta:</strong> Combina ambas configuraciones para un arranque suave
+                        y protección del motor, especialmente en aplicaciones industriales.</li>
+                </ul>
+            </section>
+
+            <section class="mb-5">
+                <h2>Componentes de Protección y Control</h2>
+                <ul>
+                    <li><strong>Relevadores:</strong> Dispositivos electromecánicos que permiten abrir o cerrar
+                        circuitos de control automáticamente, esenciales para activar y proteger otros componentes
+                        eléctricos.</li>
+                    <li><strong>Contactores:</strong> Permiten la conexión y desconexión de motores y cargas de gran
+                        potencia a través de un sistema electromecánico seguro.</li>
+                    <li><strong>Guardamotores:</strong> Proporcionan protección contra sobrecargas y cortocircuitos en
+                        motores, interrumpiendo el circuito en caso de exceso de corriente.</li>
+                    <li><strong>Temporizadores:</strong> Utilizados para controlar el tiempo de activación de un
+                        circuito, facilitando operaciones secuenciales en sistemas automáticos.</li>
+                </ul>
+            </section>
+        </div>
     </section>
     <!-- Events Section -->
     <!-- SIMULACION -->
@@ -267,7 +333,8 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="">3er Circuito Motor AC Monofásico</a></h5>
                             <p class="fst-italic text-center">En este circuito el motor AC monofásico se puede activar o
-                                desactivar mediante un circuito de enclavamiento y tiene 1492 rev por minuto al alimentarse
+                                desactivar mediante un circuito de enclavamiento y tiene 1492 rev por minuto al
+                                alimentarse
                                 medianten una fuente de poder de 120V.</p>
                             <!-- <p class="card-text"></p> -->
                             <a class="btn btn-primary btn-xl" href="assets/P3r.fsprj" target="_blank">Documento de
@@ -360,7 +427,8 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="">4to Circuito Motor AC Trifásico</a></h5>
                             <p class="fst-italic text-center">En este circuito el motor AC trifásico se puede activar o
-                                desactivar mediante un circuito de enclavamiento y tiene 1498 rev por minuto al alimentarse
+                                desactivar mediante un circuito de enclavamiento y tiene 1498 rev por minuto al
+                                alimentarse
                                 mediante una fuente de poder trifásica.</p>
                             <!-- <p class="card-text"></p> -->
                             <a class="btn btn-primary btn-xl" href="assets/P4.fsprj" target="_blank">Documento de
@@ -560,21 +628,73 @@
             </div>
         </div>
     </section>
-    <section class="py-5 text-white"></section>
-    <div class="container px-4 px-lg-5 my-5">
-        <h3 class="text-secondary mb-0">Conclusión</h3>
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-lg-12">
-                <p class="text-white">La práctica se realizó de manera exitosa, ya que los circuitos tanto simulados como construidos
-                    funcionaron de manera correcta y sin errores. El uso de software de simulación nos permitió
-                    comprobar el funcionamiento de los circuitos antes de armarlos y nos permitió detectar algunos
-                    errores que se presentaron en el armado físico.<br><br>
-                    Esta práctica nos ayudó a comprender los principios básicos sobre los motores monofásicos y
-                    trifásicos, así como sus componentes y sus distintas aplicaciones.
-                </p>
+    <section class="py-5 text-white">
+        <div class="container px-4 px-lg-5 my-5">
+            <h3 class="text-secondary mb-0">Conclusión</h3>
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-12">
+                    <p class="text-white">La práctica se realizó de manera exitosa, ya que los circuitos tanto simulados
+                        como construidos
+                        funcionaron de manera correcta y sin errores. El uso de software de simulación nos permitió
+                        comprobar el funcionamiento de los circuitos antes de armarlos y nos permitió detectar algunos
+                        errores que se presentaron en el armado físico.<br><br>
+                        Esta práctica nos ayudó a comprender los principios básicos sobre los motores monofásicos y
+                        trifásicos, así como sus componentes y sus distintas aplicaciones.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Referencias Bibliográficas</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    ACATECH, National Academy of Science and Engineering. (2020). <i>Industrie 4.0 Maturity Index</i>.
+                    Disponible en <a
+                        href="https://www.acatech.de/publikation/industrie-4-0-maturity-index-update-2020/download-pdf?lang=en"
+                        target="_blank">Acatech</a>.
+                </li>
+                <li class="list-group-item">
+                    Bolton, W. (2020). <i>Programmable Logic Controllers and Industrial Automation: An Introduction with
+                        ControlLogix, Siemens, and TIA Portal Examples</i>. Oxford: Butterworth-Heinemann.
+                </li>
+                <li class="list-group-item">
+                    Boylestad, R. L. (2021). <i>Introductory Circuit Analysis</i>. Boston, MA: Pearson.
+                </li>
+                <li class="list-group-item">
+                    Calzada, A., & Salvador, M. (2019). <i>Diseño y construcción de cuadros eléctricos de maniobra y
+                        control</i>. Madrid: Ediciones Paraninfo.
+                </li>
+                <li class="list-group-item">
+                    Deppert, W., & Stoll, R. (2018). <i>Fundamentals of Pneumatic Control Engineering: Components,
+                        Functions, Diagrams, and Practice Applications</i>. Munich: Springer.
+                </li>
+                <li class="list-group-item">
+                    Esteve, J. (2015). <i>Automatismos y cuadros eléctricos industriales</i>. Madrid: Ediciones
+                    Paraninfo.
+                </li>
+                <li class="list-group-item">
+                    Fraden, J. (2016). <i>Handbook of Modern Sensors: Physics, Designs, and Applications</i>. New York,
+                    NY: Springer.
+                </li>
+                <li class="list-group-item">
+                    Gallo, T., Cagnetti, C., Silvestri, C., & Ruggieri, A. (2021). "Industry 4.0 tools in lean
+                    production: A systematic literature review." <i>Procedia Computer Science, 180</i>, 394–403.
+                    Disponible en <a href="https://www.sciencedirect.com/science/article/pii/S1877050921002982"
+                        target="_blank">ScienceDirect</a>.
+                </li>
+                <li class="list-group-item">
+                    Gilchrist, A. (2016). <i>Industry 4.0: The Industrial Internet of Things</i>. Berkeley, CA: Apress.
+                </li>
+                <li class="list-group-item">
+                    Martin, J. C., & Garcia, M. P. (2009). <i>Automatismos Industriales</i>. Madrid: Editorial Editex,
+                    S. A.
+                </li>
+                <li class="list-group-item">
+                    Rehg, J. A., & Sartori, G. J. (2016). <i>Programmable Logic Controllers with Ladder Logic and the
+                        Engineering of Electric Circuits</i>. Upper Saddle River, NJ: Pearson.
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Footer -->
