@@ -11144,3 +11144,14 @@ footer.footer .social-link:hover {
 
 table, th, td {
   border:2px solid white;}
+
+  .image-cropper {
+    height: 400px; /* Alto deseado */
+    overflow: hidden; /* Oculta la parte sobrante */
+}
+
+.image-cropper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene las proporciones y recorta lo que sobresale */
+}
